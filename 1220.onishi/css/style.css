@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+nav {
+  max-width: 920px;
+  margin: auto;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.box {
+  max-width: 920px;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center; /* 中央ぞろえ */
+}
+
+.box-item {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+}
+
+.box-item.first {
+  width: 200px;
+  height: 399px;
+  background-color: blue;
+}
+
+@media screen and (max-width: 767px) {
+  ul {
+    flex-direction: column;
+    /* display:block;（displayをもとに戻す）でもできる。 */
+  }
+}
